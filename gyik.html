@@ -10,8 +10,8 @@
       <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
       <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
       <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
-      <meta name="theme-color" content="#1a1a1a">
-      <link rel="stylesheet" href="includes/stylesheet.css?v=2">
+      <meta name="theme-color" content="#000000">
+      <link rel="stylesheet" href="includes/stylesheet.css?v=3">
       <style>
          section {max-width: 870px;padding-top:60px; padding-bottom:30px;
          margin-left:var(--marg);
@@ -93,7 +93,7 @@
          .main-title {font-size:21px;}
          @media only screen and (min-width: 358px) {.main-title {font-size:24px;}}
          @media only screen and (min-width: 570px) {.accordion[role="tablist"] dt {font-size:16px; }}
-         @media only screen and (min-width: 650px) {#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven {display:none;}}
+         @media only screen and (min-width: 650px) {#first, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven {display:none;}}
          @media only screen and (min-width: 1023px) {
          .accordion[role="tablist"] dt {font-size:18px;  padding-right:16px;     background-color: #fbfbfb;  }
          .accordion[role="tablist"] dt[aria-selected="true"]:focus, .accordion[role="tablist"] dt[aria-selected="true"]:hover,/* .accordion[role="tablist"] dt:focus,*/  .accordion[role="tablist"] dt:hover {
@@ -140,7 +140,7 @@
             </div>
          </div>
          <div id="mySidenav" class="sidenav">
-            <a href="/localcat/szolgaltatasok.html" class="animated navlink noselect" onclick="closeNav()">Szolgáltatások</a>
+            <a href="/localcat/szolgaltatasok.html" class="animated navlink noselect">Szolgáltatások</a>
             <a href="/localcat/arak.html" class="animated-2 navlink">Árak</a>          
             <a href="/localcat/ajanlatkeres.html" class="animated-3 navlink">Ajánlatkérés</a>
             <a href="/localcat/rolunk.html" class="animated-4 navlink">Rólunk</a>
@@ -171,11 +171,11 @@
       </div>
       <section>
          <dl class="accordion">
-            <span id="zero"></span>
-            <dt data-name="zero">Mennyi ideig tart egy cicaszittelés?</dt>
+            <span id="first"></span>
+            <dt data-name="first">Mennyi ideig tart egy cicaszittelés?</dt>
             <dd>
                <p>Egy látogatás 30–40 percig tart – ez idő alatt a cicád minden igényét kielégíti a hozzátok látogató cicaszitter.</p>
-            </dd>
+            </dd>    
             <span id="one"></span>
             <dt data-name="one">Milyen időintervallumban lehet igénybe venni a localcat szolgáltatást?</dt>
             <dd>
