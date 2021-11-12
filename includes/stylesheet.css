@@ -726,7 +726,7 @@ html {
     padding-right: 2px;
   white-space:nowrap;
   margin:auto;
-  outline: 6px solid black;
+  outline: 4px solid black;
   text-align:center;
       display: block;}
 
@@ -1515,7 +1515,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
 @media screen and (min-width: 358px) {
   .indexyellowtop {margin-top:42px;}
   .index-title {font-size:23px;}
-  .firstspan, .secondspan {width: 268px;}
+  .firstspan, .secondspan {width: /*268px;*/ 272px;}
 .contactpoz .main-title {font-size:24px;}
 .servicemain {font-size:24px;}
 
