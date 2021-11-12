@@ -722,6 +722,8 @@ html {
 .firstspan {width: 260px;
   position:relative;
   z-index:3;
+  padding-left: 2px;
+    padding-right: 2px;
   white-space:nowrap;
       display: inline-block;}
 
