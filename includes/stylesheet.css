@@ -719,12 +719,13 @@ html {
 
 .fourthspan {display:none;}
 
-.firstspan {width: 268px;
+.firstspan {width: 260px;
   position:relative;
   z-index:3;
+  white-space:nowrap;
       display: inline-block;}
 
-      .secondspan {width: 268px;
+      .secondspan {width: 260px;
         position:relative;
         z-index:2;
         display: inline-block;
@@ -736,7 +737,11 @@ html {
           z-index:1;
           position:relative;
         
-          margin-left: 46px;}
+          margin-left: 46px;
+          margin-left: 0;
+         }
+
+       
  
 
 .pad {padding-left:var(--marg); padding-right:var(--marg);}
@@ -764,8 +769,8 @@ html {
       font-size: /*24px*/24px;
       line-height: 1.4;
       font-weight: 600;
-    
      font-family:var(--book);
+     font-size:22px;
     }
 
       .index-main-text {
@@ -774,7 +779,18 @@ html {
     transform: translate(-50%);
     position:absolute;
 
+    left: unset;
+    padding-top:3.2%;
+    top: unset;
+    transform: none;
+    position:unset;
+    text-align: center;
+
+
       }
+
+ 
+      
 
       .pcmancs {display:none;}
 
@@ -788,7 +804,9 @@ html {
         margin-right:1px;
         line-height: 1.15;
         font-size: 19px;
-        margin-top:/* 44px*/ 41px;
+        margin:auto;
+        margin-top:/* 44px*/ 50px;
+        width: 246px;
       }
 
       .servicemain {font-size:20px;}
@@ -817,9 +835,11 @@ html {
       .lctextindex {
         width: 124px;
         margin: auto;
-        margin-bottom: 35px;
+      /*  margin-bottom: 35px;*/
+      margin-bottom: 33px;
         display: block;
-        margin-top: 20px;
+     /*   margin-top: 20px;*/
+     margin-top:22px;
       
       }
 
@@ -862,25 +882,29 @@ html {
 
     .index-title span { background-color: #000;
       color: #FFF;
-        box-shadow: 
-        -5px 0px 0 7px #000, 6px 0px 0 7px #000, 0 0 0 7px #000;
-      /*  outline: 3px solid #000;
-        outline-offset:-1px;*/
+      /*     box-shadow: 
+   -5px 0px 0 7px #000, 6px 0px 0 7px #000, 0 0 0 7px #000;
+        outline: 3px solid #000;
+        outline-offset:-1px;
         -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
+        box-decoration-break: clone;*/
         position:relative;
+        
       }
     .index-title span:after {
       content: "";
-      width: calc(100% + 10px);
-      height: calc(100% + 6px);
+      width: calc(100% + 32px);
+      height: calc(100% + 14px);
       position: absolute;
       background: #000;
-      left: -5px;
-      top: -3px;
+      left: -16px;
+      top: -7px;
       z-index: -1;
+     
+     
       }
 
+     
       @-moz-document url-prefix() {
         .index-title span:after {
           width: calc(100% + 6px);
@@ -1442,6 +1466,8 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
         i.speciali {font-size:27px;}
      
         i.speciali2 {font-size:30px; margin-bottom:3px;}
+        .icontainerindex i.special-pic-icon {font-size:42px; margin-top:-8px;}
+       
        
         .more-of-it {font-family: var(--demi);
         font-size:15px;}
@@ -1481,18 +1507,17 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
             .contact-line-mob {margin-top:14px!important; margin-bottom:60px!important;}
 
 @media screen and (min-width: 358px) {
-.indexyellowtop {
-  margin-left: 5px;
-  margin-right:5px;
-}
-
+  .indexyellowtop {margin-top:42px;}
+  .index-title {font-size:23px;}
+  .firstspan, .secondspan {width: 268px;}
 .contactpoz .main-title {font-size:24px;}
 .servicemain {font-size:24px;}
 
+.lctextindex {margin-bottom: 35px;
+ margin-top: 20px;}
+
 .serviceyellowtop {font-size:16px; font-weight:normal;}
-  .index-title span {box-shadow: -8px 0px 0 7px #000,
-    8px 0px 0 7px #000,
-    0 0 0 7px #000;}
+
 /*	   
   .indexpoz { background-position: 50% 10%;
     background-position: center bottom -6.3vw;
@@ -1535,8 +1560,12 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
   .icontainerindex {max-width:580px;grid-template-columns:repeat(auto-fit, minmax(138px, 1fr)); margin:auto; margin-bottom:60px;
   padding-left:6%; padding-right:6%;}
   .icontainerindex i {font-size: 38px;}
+
   i.speciali {font-size:28px;}
   i.speciali2 {margin-bottom:6px; font-size:32px;}
+  .icontainerindex i.special-pic-icon {
+  font-size: 46px;
+  margin-top: -8px;}
 
   .indexyellowtop {margin-top:  10.294vw}
 }
@@ -1550,20 +1579,25 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
        .indexyellowtop {margin-top:24px;}
   .firstspan, .secondspan, .thirdspan {display:none;}
   .fourthspan {display:block;}
-  .index-main-text {width:400px;}
+  .index-main-text {width:360px; margin:auto;}
   .part-one {padding-bottom:50px;}
   .icontainertop {margin-top: 50px;}
   .itsmargintop {margin-top:10px;}
   .question-img {/*margin-top:264px;*/ display:none;}
-  .index-title {font-size:20px; text-align:center;}
+  .index-title {font-size:18px; text-align:center;}
   .aboutindex .icontainertop, .abp {margin-bottom: 60px;}
   .aboutindex {margin-bottom:100px;}
   .servicepoz {background-position: 50% 26%;}
   .serviceyellowtop {font-size:18px;}
+  .index-title span {box-shadow: -8px 0px 0 7px #000,
+    8px 0px 0 7px #000,
+    0 0 0 7px #000;}
 
 }
 
-
+@media screen and (min-width: 460px) {
+  .index-title {font-size:20px; text-align:center;}
+  .index-main-text{width:400px;}}
 
 @media screen and (min-width: 580px) {
 
@@ -1682,6 +1716,10 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
           .icontainerindex {row-gap: 46px;}
 
           i.speciali2 {margin-bottom:1px; font-size:40px;}
+          .icontainerindex i.special-pic-icon{
+          font-size: 50px;
+          margin-top: -8px;}
+
           .icontainerindex p {margin-top: 14px;;}
 
           .contactpoz { background: url(../img/07_kapcsolat-min.jpg); background-position: 50% 50%;
@@ -1692,6 +1730,8 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
       }
        
               @media only screen and (min-width: 767px) {    
+
+               
                 .indexstyle .hero { height:600px;}
 
                 .abbuholder {padding-top:50px;}
@@ -1807,10 +1847,17 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
               @media only screen and (min-width: 810px) {
               .icontainerindex {max-width:660px;}
               .icontainerindex i {font-size:44px;}
-              i.speciali {font-size:36px;}}
+              i.speciali {font-size:36px;}
+              .icontainerindex i.special-pic-icon{
+                font-size: 52px;
+                margin-top: -8px;}
+            
+            }
                 
        
               @media only screen and (min-width: 1023px) {
+
+             
 
                 .card:hover {background-color: var(--localyellow); transition: background-color .3s ease-in-out;}
             /*  .card:hover .deatils{background:#dbdce0} .deatils {transition: background-color .3s ease-in-out;}*/
@@ -2066,6 +2113,10 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
         .icontainerindex p {
           font-size: 17px;}
 
+          .icontainerindex i.special-pic-icon{
+            font-size: 68px;
+            margin-top: -10px;}
+
           h2.icontainertop {font-size:28px; }
           i.speciali {font-size:42px}
      /*   .iconcardindex:nth-child(1) {
@@ -2085,6 +2136,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
           grid-row: 1 / 2;*/
           grid-column: 3 / span 2;
     justify-self: start;
+    margin-left: -4px;
         }
         .iconcardindex:nth-child(6) {
           grid-column: 3  / span 3;
@@ -2218,7 +2270,10 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
         @media only screen and (min-width: 1300px) {.main-title, .contactpoz .main-title {font-size:44px;} .index-main-text-two {left: 16%;}
         .icontainerindex p {font-size: 19px;} .icontainerindex {max-width:798px;} 
         .icontainerindex i {font-size:60px;}
-        i.speciali {font-size: 42px;}
+        i.speciali {font-size: 42px; margin-top:8px;}
+        .icontainerindex i.special-pic-icon{
+          font-size: 70px;
+          margin-top: -10px;}
       .aboutindex {margin-bottom:120px;}}
 
         @media only screen and (min-width: 1360px) {
@@ -2287,6 +2342,10 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
             .part-one {display:none;}
             .laptoporder {display:none;}
             .aboutindex {margin-bottom:130px;}
+
+            .iconcardindex:nth-child(2) {
+           margin-left: -16px;
+               }
         }
 
         @media only screen and (min-width: 1400px) {
