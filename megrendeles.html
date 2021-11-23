@@ -4,21 +4,37 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Szolgáltatások - Cicád van és elutaznál? | LocalCat</title>
-      <meta name="description" content="LocalCat macskaetetés saját környezetben, hogy a cicák a komfortzónájukban maradhassanak, amíg Te elutazol. A cicaszitterek házhoz mennek."/>
+      <title>Árak - LocalCat-díjkategóriák</title>
+      <meta name="description" content="Ha nem találod meg a számodra megfelelő konstrukciót, egyeztess velünk! Az árak bruttó árak, napi egy vagy két etetésre és egy cica ellátására vonatkoznak." />
       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
       <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
       <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
       <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
       <meta name="theme-color" content="#000000">
-      <link rel="stylesheet" href="includes/flickity.min.css?22" media="screen">
       <link rel="stylesheet" href="includes/stylesheet.css?v=4">
+      <style>
+         @media only screen and (min-width: 1023px){
+         .gradient {
+         height: 90px;
+         width: 100%;
+         margin-bottom: -90px;
+         position: relative;
+         z-index: 2;
+         background: linear-gradient(180deg, rgba(255,255,255,0.76), rgba(255,255,255,0) 100%);
+         }}
+         @media only screen and (min-width: 1400px){
+         .top-text-part {
+         padding-top:90px;
+         }}
+      </style>
+  
    </head>
-   <body>
+
+  
+            
       <nav>
          <div class="mobile-menu">
             <div class="langselector"><a class="active-lang">HUN</a><br><a href="/home">ENG</a></div>
-            <!--   <img src="img/logo-cat.png" alt="Ads interactive logó" class="main-mobile-logo">--> 
             <a href="/localcat/" class="main-mobile-logo"><i class="lcicon-localcat-cica"></i></a>
             <div class="menu-icon" onclick="openNav()">
                <div id="nav-icon1">
@@ -29,8 +45,8 @@
             </div>
          </div>
          <div id="mySidenav" class="sidenav">
-            <a href="/localcat/szolgaltatasok.html" class="animated navlink noselect">Szolgáltatások</a>
-            <a href="/localcat/arak.html" class="animated-2 navlink">Árak</a>          
+            <a href="/localcat/szolgaltatasok" class="animated navlink noselect">Szolgáltatások</a>
+            <a href="/localcat/arak" class="animated-2 navlink">Árak</a>          
             <a href="#" class="animated-3 navlink">Ajánlatkérés</a>
             <a href="/localcat/rolunk.html" class="animated-4 navlink">Rólunk</a>
            <a href="/localcat/gyik.html" class="animated-5 navlink">Gy.i.k.</a>
@@ -38,7 +54,7 @@
          </div>
       </nav>
       <div class="gradient"></div>
-      <div class="hero pad servicepoz">
+      <div class="hero pad orderpoz">
          <nav>
             <div class="pc-menu">
                <a href="/localcat/">Kezdőlap</a>
@@ -52,72 +68,124 @@
                <a href="#" style="margin-left:5px;">Eng</a>
             </div>
          </nav>
-         <h1 class="main-title servicemain too-big"> 
+         <h1 class="main-title servicemain"> 
             <span>
-            Behódoltunk a cicáknak, 
+               Ajánlatkérés,
             </span>
-            <span class="serviceyellowtop adjusted-serviceyellow">így a tiédet is szolgálatkészen gondozzuk!</span>
+            <br>
+            <span class="serviceyellowtop">mindössze pár kattintással</span>
          </h1>
       </div>
       <div class="main">
-         <!--<a href="/megrendeles" class="order-href second-order gvuitwo"><i class="lcicon-megrendelem-mancs-korben"></i>AJÁNLATKÉRÉS</a>-->
-         <div class="gentextbox aboutgentext servicegentext">
-            <p>Elutaznál, de nem tudod kire bízni a cicádat? Ilyen esetekben bizalommal fordulhatsz hozzánk. Otthoni környezetben, egyéni igényeknek és szokásoknak megfelelően látjuk el kis kedvencedet, amíg te távol vagy. A LocalCat cicaszitter-szolgáltatása tehát biztosítja számodra, hogy a legnagyobb nyugalomban pihenj, miközben macskád boldogan dorombol és játszik macskaszitterünkkel.</p>
-         </div>
-         <div class="da-line top-line special-top-line"></div>
-         <h2 class="yellow icontainertop itsmargintop"><span>Minden látogatás során...</span></h2>
-         <section class="serviceicons">
-            <div class="yellowiconcontainer">
-               <div class="iconcard">
-                  <i class="lcicon-etetunk speciali"></i>
-                  <h3 class="icontitle feed">megetetjük kedvencedet</h3>
-                  <p>Kizárólag olyan többéves referenciával rendelkező cicaszitterekkel dolgozunk, akikért maximális felelősséget vállalunk. Nem közvetítőként, hanem macskaszittereinkkel együtt, egy csapatként tevékenykedünk, így biztos lehetsz benne, hogy személyesen ismerjük a hozzád érkező macskafelvigyázót.</p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-kepet-kuldunk"></i>
-                  <h3 class="icontitle">képeket küldünk a cicádról</h3>
-                  <p>Minden etetés alkalmával fényképes visszajelzést kapsz tőlünk, hogy meggyőződhess róla, cicád jól érzi magát a felügyeletünk alatt. Fotókat küldünk arról, hogy milyen rosszaságon töri épp a fejét, és szöveges üzenetben informálunk, hogy mi történt a cicaszittelés ideje alatt. (Például hogyan evett a cica, milyen játékhoz volt kedve, vagy mennyit dorombolt a szitterének.)
-                  </p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-friss-vizet-adunk"></i>
-                  <h3 class="icontitle">friss vízzel itatjuk</h3>
-                  <p>Minden cicalátogatás során friss vizet adunk kedvencednek, hiszen az etetés mellett az itatás és a rendszeres vízcsere is épp olyan fontos. Legyen az csapból, folyó víz melletti „szomjoltás” vagy egyszerű vízcsere (tálban, cicaitatóban), ránk számíthatsz. Cicád nem fog szomjan maradni.</p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-kenyeztetunk"></i>
-                  <h3 class="icontitle">kényeztetjük kedvencedet</h3>
-                  <p>Az általános cicagondozási teendőkön felül természetesen kedveskedünk is négylábú barátainknak – beszélünk hozzájuk és simogatjuk őket. Különösen ügyelünk rá, hogy a félénkebb, zárkózottabb cicákat óvatosan, körültekintően közelítsük meg, és a számukra megfelelő tempóban, fokozatosan nyerjük el a bizalmukat.</p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-almot-tisztitunk-villa"></i>
-                  <h3 class="icontitle">kitisztítjuk a macskaalmot</h3>
-                  <p>A maximális higiénia érdekében a kiszállások során az almot a kérésednek megfelelően tisztítjuk: cicád igényei szerinti rendszerességgel átforgatjuk vagy teljesen kicseréljük, és a cicamancsokról lepotyogó alomdarabokat is összesepregetjük a cicavécé körül.
-                  </p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-jatszunk"></i>
-                  <h3 class="icontitle">játszunk a cicáddal</h3>
-                  <p>Ha a cicádnak van rá igénye, nagy örömmel játszunk vele és kellőképpen megmozgatjuk – így mindenképp hagyd elöl szittereinknek ezeket a kellékeket. Addig bolondozunk vele, amíg csak szeretné, legyen szó a lézeres macskajáték fényének kergetéséről, labdázásról, cicapecáról vagy madzag üldözéséről, cicaszittereink épp olyan boldogan töltik az időt játékkal, mint kedvenced. 
-                  </p>
-               </div>
-               <div class="iconcard">
-                  <i class="lcicon-viragot-locsolunk"></i>
-                  <h3 class="icontitle">virágot locsolunk</h3>
-                  <p>A cicagondozás mellett velünk a növényeid sem maradnak magukra. Felár nélkül maximum 10 darab szobanövényt öntözünk meg a cicaszittelés teljes ideje alatt, ügyelve a növények különböző vízigényeire, követve az utasításaidat.
-                  </p>
-               </div>
-            </div>
+         <section class="top-text-part">
+        
+            <p style="padding-top:10px">Ha még nem vigyáztunk a cicádra, kattints az alábbi <span class="nobutton">gombra</span> <span class="yesbutton">hivatkozásra</span> és olvasd el, az összes tudnivalót a szolgáltásunkról!</p>
+            <a onclick="openOrder()" href="#megrendeles-menete" class="noworderinghref">A megrendelés és a szittelés menete</a>
          </section>
-         <div class="da-line bottom-line special-top-line top-bottom-service"></div>
       </div>
-      <div class="buttonholderfortwo abbuholder">
-         <a href="/megrendeles" class="order-href"><i class="lcicon-megrendelem-mancs-korben"></i>AJÁNLATKÉRÉS</a>
-         <a href="/arak" class="order-href faqhref">ÁRAK</a>
+   <div class="height-control">
+ 
+      <div class="orderdropdown" id="megrendeles-menete">
+  
+         <div class="ordertitleandwrapper">
+         <!--   <img src="img/order-list.jpg" alt="A megrendelés menete"></img> -->
+            <img src="./img/close_black.svg" alt="Bezár" class="close-order-box" onclick="closeOrder()">
+            <img src="./img/x.png" alt="Bezár" class="close-order-box-two" onclick="closeOrder()">
+           
+            <div class="centercat"><i class="lcicon-localcat-cica"></i></div> 
+            <h2 class="orderhtwo">A megrendelés & a cicaszittelés menete</h2>
+            <div class="da-line top-line order-bottom-line-part" style="margin-bottom:50px;"></div>
+      <div class="ordercontainerwrapper">
+       <div class="orderline"></div> 
+         <div class="oneorderblock order-1">
+            <span class="num righty">1</span>
+            <p>Ajánlatkérés</p>
+         </div>
+         <div class="oneorderblock order-2">
+            <span class="num lefty">2</span>
+            <p>Localcat visszajelzése <br><span class="notorderheavy">A Localcat visszajelez, hogy tudja-e vállalni 
+               <br class="brrr">az adott felkérést</span></p>
+         </div>
+         <div class="oneorderblock order-3">
+            <span class="num righty">3</span>
+            <p>Megrendelőlap küldése<br class="brrr">
+               pontos árajánlattal
+               </p>
+         </div>
+         <div class="oneorderblock order-4">
+            <span class="num lefty">4</span>
+            <p>Megrendelőlap kitöltése<br class="brrr">
+               és eü-kiskönyvek fotóinak <br class="brrr">
+               feltöltése               
+               </p>
+         </div>
+         <div class="oneorderblock order-5">
+            <span class="num righty">5</span>
+            <p>Visszaigazolólap küldése
+               </p>
+         </div>
+         <div class="oneorderblock order-6">
+            <span class="num lefty">6</span>
+            <p>Cicaszitter telefonos <br class="brrr">
+               bejelentkezése a gazdinál
+               </p>
+         </div>
+         <div class="oneorderblock order-7">
+            <span class="num righty">7</span>
+            <p>Személyes konzultáció <br class="brrr">   
+               és kulcsátadás
+               </p>
+         </div>
+         <div class="oneorderblock order-8">
+            <span class="num lefty">8</span>
+            <p>Cicaszittelések <br class="brrr">
+               a megrendelések szerint,<br class="brrr">
+               fényképes jelentések küldése 
+               <span class="notorderheavy">Egy átlagos látogatás 35-40 perces cicaszittelést jelent</span>
+               </p>
+         </div>
+         <div class="oneorderblock order-9">
+            <span class="num righty">9</span>
+            <p>Cicaszittelés vége
+               </p>
+         </div>
+         <div class="oneorderblock order-10">
+            <span class="num lefty">10</span>
+            <p>Elektronikus számla küldése
+               </p>
+         </div>
+         <div class="oneorderblock order-11">
+            <span class="num righty">11</span>
+            <p>Kulcsvisszaadás
+               </p>
+         </div>
+         <div class="oneorderblock order-12">
+            <span class="num lefty">12</span>
+            <p>Cicaszittelés díjának banki <br class="brrr">
+               átutalással történő <br class="brrr">
+               rendezése
+               </p>
+         </div>
+     
+         <a href="#megrendelem-most" class="gotoordernow">Tovább a megrendeléshez</a>
+     
       </div>
+    
+      <div class="da-line bottom-line order-bottom-line-part"></div>
       </div>
+ 
+   </div>
+   <div class="moblieorderline"></div>
+</div>
+
+
+      
+          <div class="order-the-service" id="megrendelem-most">
+             <p>Ide jön majd a megrendelés...</p>
+          </div>
+         </div>
       </div>
-      <div class="yellowline-bottom">
+      <div class="yellowline-bottom" style="margin-top:0;">
          <a href="#top" class="top"><img src="img/up.png" alt="irány az oldal teteje"></img></a>
       </div>
       <footer>
@@ -180,7 +248,10 @@
          </div>
          <div class="marginbottom"></div>
          </div>
+              
+     </div>
       </footer>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>  -->
       <script>
          function openNav() {
             const navLinks = document.querySelectorAll('.navlink');
@@ -203,8 +274,29 @@
                 element.classList.remove('fadeInDown')
             });
          }
+
+
+         const orderContainer = document.querySelector('.orderdropdown');
+         const aroundTheOrderContainer = document.querySelector('.height-control');
+   function openOrder () {
+ 
+      orderContainer.classList.add('open-order');
+      aroundTheOrderContainer.classList.add('opened-height-control');
+     
+   }
+
+   function closeOrder () {
+    
+      orderContainer.classList.remove('open-order');
+      aroundTheOrderContainer.classList.remove('opened-height-control');
+   }
+
+   if (location.hash === '#megrendeles-menete') {
+      orderContainer.scrollIntoView({behavior: "auto", block: "start", inline: "nearest"});
+      openOrder () 
+   }
+
          
       </script>
-      <script src="includes/flickity-docs.min.js?3"></script>
    </body>
 </html>
