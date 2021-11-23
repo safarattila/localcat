@@ -1534,6 +1534,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
         .aboutindex {margin-bottom:80px;}
         .itsmargintop {margin-top:10px;}
         .serviceicons .yellowiconcontainer i {color:black;}
+        .serviceicons .yellowiconcontainer .unique-special-icon {font-size:50px;}
 
         .contactinfo {    padding-left: var(--marg);
           padding-right: var(--marg);
@@ -1954,6 +1955,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
               .icontainerindex i.special-pic-icon{
                 font-size: 52px;
                 margin-top: -8px;}
+                .serviceicons .yellowiconcontainer .unique-special-icon {font-size:58px; display:block; margin-top:-14px;}
 
                 .adatpoz, .impresszpoz { background-position: 50% 50%;}
             
@@ -2506,6 +2508,10 @@ outline: 4px solid #fbfbfb; color:var(--localyellow);}
             }
 
             .servicegentext p {text-align: center;}
+
+            .serviceicons .yellowiconcontainer .unique-special-icon {    font-size: 76px;
+              display: block;
+              margin-top: -12px;}
         }
 
 
@@ -2541,7 +2547,14 @@ outline: 4px solid #fbfbfb; color:var(--localyellow);}
           .aboutindex .yellow span {
             box-shadow: -56px 0px 0 9px var(--localyellow), 56px 0px 0 9px var(--localyellow), 0 0 0 9px var(--localyellow);
           }
+          
 
+          .serviceicons .yellowiconcontainer .unique-special-icon {    font-size: 76px;
+            display: block;
+            margin-top: -15px;}
+      
+
+          
           .servicepoz .servicemain {left:8%;}
          
           .footerpc {grid-template-columns: 1fr 0.6fr 1fr; }
