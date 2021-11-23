@@ -1596,8 +1596,8 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
   .firstspan, .secondspan {width: /*268px;*/ 272px;}
 .contactpoz .main-title {font-size:24px;}
 .servicemain {font-size:24px;}
-.orderpoz .servicemain { bottom:33px;}
-.servicemain .serviceyellowtop {font-size:21px;}
+.orderpoz .servicemain { bottom:36px;}
+.servicemain .serviceyellowtop {font-size:20px;}
 .lctextindex {margin-bottom: 35px;
  margin-top: 20px;}
 
@@ -1623,7 +1623,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
   .icontainerindex {column-gap:0;  padding-left:3%; padding-right:3%;}
   .serviceyellowtop {font-size:17px;}
 }
-.orderpoz .servicemain { bottom:31px;}
+.orderpoz .servicemain { bottom:36px;}
 /*
 @media screen and (min-width: 368px) {
   	   
