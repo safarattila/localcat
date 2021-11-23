@@ -847,6 +847,8 @@ background-size: cover;
 
       .orderpoz .servicemain { text-align:center; bottom:27px;}
 
+      .servicemain .serviceyellowtop {font-size:18px;}
+
       .serviceyellowtop {
         margin-top: 20px;
         display: inline-block;
@@ -1594,8 +1596,8 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
   .firstspan, .secondspan {width: /*268px;*/ 272px;}
 .contactpoz .main-title {font-size:24px;}
 .servicemain {font-size:24px;}
-.orderpoz .servicemain { bottom:73px;}
-
+.orderpoz .servicemain { bottom:33px;}
+.servicemain .serviceyellowtop {font-size:21px;}
 .lctextindex {margin-bottom: 35px;
  margin-top: 20px;}
 
@@ -1621,7 +1623,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
   .icontainerindex {column-gap:0;  padding-left:3%; padding-right:3%;}
   .serviceyellowtop {font-size:17px;}
 }
-.orderpoz .servicemain { bottom:71px;}
+.orderpoz .servicemain { bottom:31px;}
 /*
 @media screen and (min-width: 368px) {
   	   
@@ -2009,6 +2011,7 @@ margin-bottom:40px; margin-bottom:clamp(40px, 2.703vw, 60px)}
                   width: 600px;
                   top: 65%;
                    transform: none; }
+                   .servicemain .serviceyellowtop {font-size:28px;}
                 .aboutindex .icontainertop {margin-bottom:60px;}
                 .pcmancs {display:block; margin:auto; text-align:center; display: block;
                   width: 132px; margin-bottom:50px;}
